@@ -17,8 +17,11 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     void loadFile();
+    void countWordFrequency();
+    void saveOutput();
 
 private:
     Ui::MainWindow *ui;
+    QString filePath;
 };
 #endif // MAINWINDOW_H
