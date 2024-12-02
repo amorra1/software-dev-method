@@ -15,14 +15,15 @@ public:
     virtual ~Shape() {}
 };
 
+//rectangle class inherits from shape
 class Rectangle : public Shape {
     double width, height;
 
     public:
         Rectangle(double width, double height) : width(width), height(height) {}
 
-        double area() const override {return width*height;}
-        double perimeter() const override {return 2*(width + height);}
+        double area() const override {return width*height;} //A = L*W
+        double perimeter() const override {return 2*(width + height);} //P = 2*(L + W)
 
         void displayProperties() const override {
             std::cout << "Rectangle - Width: " << width
@@ -32,14 +33,15 @@ class Rectangle : public Shape {
         }
 };
 
+//circle class inherits from shape
 class Circle : public Shape {
     double radius;
 
     public: 
         Circle(double radius) : radius(radius) {}
 
-        double area() const override {return PI*radius*radius;}
-        double perimeter() const override {return 2*PI*radius;}
+        double area() const override {return PI*radius*radius;} //A = pi*r^2
+        double perimeter() const override {return 2*PI*radius;} //P = 2*pi*r
 
         void displayProperties() const override {
         std::cout << "Circle - Radius: " << radius
@@ -48,6 +50,7 @@ class Circle : public Shape {
     }
 };
 
+//triangle class inherits from shape
 class EquilateralTriangle : public Shape {
     double side;
 
