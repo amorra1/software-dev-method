@@ -1,7 +1,17 @@
 // ready for onQ 
 #include <iostream>
-#include <iomanip> // needed for manipulation of the input/ output
+#include <iomanip> /* needed for manipulation of the input/ output
+Provides definition for manipulators such as setprecision and setw
+*/
 using namespace std; 
+
+/* === Stream Notes ===
+- cin: standard input stream, by default linked to the standard input device (keyboard) Instance of
+- cout: standard output stream, by default linked to the standard output device (console) Instance of
+- cerr: standard error stream, by default linked to the standard error device (console) Instance of
+- clog: standard log stream, by default linked to the standard log device (console) Instance of
+*/
+
 void ruler() {
     cout << "\n12345678901234567890123456789012345678901234567890" << endl;
 }

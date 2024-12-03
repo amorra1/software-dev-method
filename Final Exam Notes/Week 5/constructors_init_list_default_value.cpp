@@ -5,6 +5,30 @@
 
 using namespace std;
 
+/* === Class Notes ===
+- an instance of a class is an object
+- an object encapsulates the data and operations that use such data
+- used as a blueprint to create an object, has data, has functions
+- pointer to objects user -> operator
+- Modifiers
+    - Public: accessible from anywhere
+    - Private: accessible only by other members of same class or by friends of class
+    - Protected: used with inheritance, the member is only accessible to a child class
+- Constructors
+    - Special member method
+    - has same name as class
+    - used for object creation and initialization
+    - can call another constructor in the initialization list
+- Destructor
+    - special member method
+    - has same name as class preceeded by ~
+    - used to release memory and other resources
+    - only one per class
+- Copy Constructor
+    - used when an object is copied
+    - we pass an object by value, return an object by value
+*/
+
 class Student
 {
 private:

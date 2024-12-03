@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 using namespace std; 
 
 double getAverage(const int array[], int size) {
@@ -73,55 +74,55 @@ int main (){
     char alphabet = 'e'; 
     print(&num, 'i'); 
     print(&alphabet, 'c'); 
-    print(&alphabet, 'a'); 
+    // print(&alphabet, 'a'); 
 
-    // // using getAverageMedian (returning more than one value)
-    // double average {0.0}; 
-    // double median {0.0}; 
-    // int data [6] = {1, 2, 3, 4, 8, 6}; 
-    // getAverageMedian (data, 6, &average, &median); 
-    // cout << "The avergare is: " << average << " and the median is: " << median  << endl; 
+    // using getAverageMedian (returning more than one value)
+    double average {0.0}; 
+    double median {0.0}; 
+    int data [6] = {1, 2, 3, 4, 8, 6}; 
+    getAverageMedian (data, 6, &average, &median); 
+    cout << "The avergare is: " << average << " and the median is: " << median  << endl; 
 
-    // // working with dynamic arrays 
-    // int size; 
-    // cout << "Input size of the array: "; 
-    // cin >> size; 
-    // // int array [size]; // not valid prior to C++11
+    // working with dynamic arrays 
+    int size; 
+    cout << "Input size of the array: "; 
+    cin >> size; 
+    // int array [size]; // not valid prior to C++11
     
-    // int* dynamicData = new int[size]; 
-    // cout << "==========input dynamic array============"<<endl; 
-    // for (size_t i = 0; i < size; ++i) {
-    //     cout << "dynamicData["<< i << "]: ";
-    //     cin >> dynamicData[i];  
-    // }
-    // cout << "==========display dynamic array============"<<endl; 
-    // for (size_t i = 0; i < size; ++i) { 
-    //     cout << "dynamicData["<< i << "]: " << *(dynamicData + i) << endl; 
-    // }
-    // delete [] dynamicData; // deallocates memery that the array is pointing to 
-    // dynamicData = nullptr; 
+    int* dynamicData = new int[size]; 
+    cout << "==========input dynamic array============"<<endl; 
+    for (size_t i = 0; i < size; ++i) {
+        cout << "dynamicData["<< i << "]: ";
+        cin >> dynamicData[i];  
+    }
+    cout << "==========display dynamic array============"<<endl; 
+    for (size_t i = 0; i < size; ++i) { 
+        cout << "dynamicData["<< i << "]: " << *(dynamicData + i) << endl; 
+    }
+    delete [] dynamicData; // deallocates memery that the array is pointing to 
+    dynamicData = nullptr; 
 
-    // // multidiemntional dynamic arrays
-    // int rows {0}, cols {0}; 
-    // cout << "rows: "; 
-    // cin >> rows; 
-    // cout << "cols: "; 
-    // cin >> cols; 
+    // multidiemntional dynamic arrays
+    int rows {0}, cols {0}; 
+    cout << "rows: "; 
+    cin >> rows; 
+    cout << "cols: "; 
+    cin >> cols; 
 
-    // int** multiDimArray = new int* [rows]; 
-    // for (size_t i = 0; i < rows; ++i) {
-    //     multiDimArray[i] = new int [cols]; 
-    // }
+    int** multiDimArray = new int* [rows]; 
+    for (size_t i = 0; i < rows; ++i) {
+        multiDimArray[i] = new int [cols]; 
+    }
 
-    // multiDimArray [1][2] = 7; 
-    // cout << multiDimArray [1][3] << endl; 
+    multiDimArray [1][2] = 7; 
+    cout << multiDimArray [1][3] << endl; 
 
-    // // deleting
-    // for (size_t i = 0; i < rows; ++i) {
-    //     delete [] multiDimArray[i]; 
-    // }
-    // delete [] multiDimArray; 
-    // multiDimArray = nullptr; 
+    // deleting
+    for (size_t i = 0; i < rows; ++i) {
+        delete [] multiDimArray[i]; 
+    }
+    delete [] multiDimArray; 
+    multiDimArray = nullptr; 
     
 
  return 0; 

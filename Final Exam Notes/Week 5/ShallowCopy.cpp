@@ -5,6 +5,14 @@
 
 using namespace std;
 
+/* === Shallow Copy notes ===
+- shallow copy is when each member attribute is coped from the source object
+- default compiler generated constructor performs shallow copy
+- copies only the pointers, not the resources the point to
+- both original and copy share the same memory for dynamic resource
+- changing the resource in one object changes it in the other too
+*/
+
 class Shallow {
 private:
     int *data;

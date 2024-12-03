@@ -5,6 +5,13 @@
 
 using namespace std;
 
+/*
+Here, a cunstructor can call other constructors, the chain of events can be dictated by the order
+in which statments are printed to the terminal
+
+When the no argument constructor is called, it then calls the three argument constructor
+*/
+
 class Student
 {
 private:

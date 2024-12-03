@@ -4,6 +4,12 @@
 
 using namespace std;
 
+/* === Deep Copy Notes ===
+- copies the actual resource, not just the pointer
+- each object has its own independant copy of the dynamic resource
+- avoids issues of double deletion
+*/
+
 class Deep {
 private:
     int *data;
