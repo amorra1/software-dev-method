@@ -57,7 +57,47 @@ int main() {
     int product {value1 * value2}; // short will get you an overflow
     
     cout << "\nThe product of " << value1 <<  " and " << value2 << " is " <<  product << endl;
+
+    /******* Escape Sequences *********/
+    cout << "\n\nnewline \t tab backspace\b carriage return \r bel \a" << endl;
+
+    /****** Raw Strings *********/
+    // Regular string with escape sequences
+    std::string regularString = "This is a newline\nand a tab\t.";
+    // Raw string with no escape sequences
+    std::string rawString = R"(This is a raw string\nand a raw tab\t.)";
     
+    std::cout << "Regular String: " << regularString << std::endl;
+    std::cout << "Raw String: " << rawString << std::endl;
+
+
+    /********* Constants *********/
+    /* older constans used the #define, in c++ we can use the const prequalifier*/
+    const int MONTHS =12;
+    const double GRAVITY = 9.81;
+
+    //enumerated constants
+    enum Days {
+        Sunday,
+        Monday,
+        Tuesday,
+        Wednesday,
+        Thursday,
+        Friday,
+        Saturday
+    };
+
+   /*constant expressions
+   - get evaluated at runtime
+   - save performance
+   */
+    constexpr int add(int a, int b){
+        return a + b;
+    }
+
+    constexpr int result = add(3, 4);
+    cout << result << endl;
+
     return 0;
 }
 
