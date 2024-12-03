@@ -7,8 +7,10 @@
     - this will give static binding insread of dynamic binding
 - Static binding: binding of which method is done at compile time, early binding
     - function overloading
+    - inheritance is not a requirement for overloading
 - Dynamic binding: binding of which is done at run time, late binding
     - function overriding
+    - inheritance is a requirement for overriding
     - name function shared in parent and child classes as virtual
 - override keyword in derived classes ensures that the function is intended to be overriden
 - if you dont use virtual keyword then child class method redefines the function (it hides or shadows it)
