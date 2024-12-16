@@ -3,6 +3,13 @@
 
 using namespace std; // or use std:: 
 
+/* === Notes ===
+- c-style strings are contiguous sequence of characters stored in memory
+    - terminated with the null \0 characters
+- c++ style strings are dynamic in size
+- can use operators + = < []
+*/
+
 int main() {
 
     string emptyItem;

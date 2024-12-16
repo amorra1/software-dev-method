@@ -72,6 +72,12 @@ int main() {
 
 
     /********* Constants *********/
+
+    /*
+    - constants improve code readability and maintainability
+    - cam be literal constants, or enumerators constants
+    */
+
     /* older constans used the #define, in c++ we can use the const prequalifier*/
     const int MONTHS =12;
     const double GRAVITY = 9.81;

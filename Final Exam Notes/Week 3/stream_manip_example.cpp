@@ -6,6 +6,7 @@ Provides definition for manipulators such as setprecision and setw
 using namespace std; 
 
 /* === Stream Notes ===
+- Stream is an interface independant from the actual device
 - cin: standard input stream, by default linked to the standard input device (keyboard) Instance of
 - cout: standard output stream, by default linked to the standard output device (console) Instance of
 - cerr: standard error stream, by default linked to the standard error device (console) Instance of

@@ -1,0 +1,39 @@
+Scrum Notes- Week 3 Lecture 1
+- Scrum Project
+    - Has some initital planning
+    - who is the customer?
+    - who are the users?
+    - who is the team?
+    - inital project backlog?
+- sprints are 2-4 weeks long
+    - has a sprint backlog
+    - daily standup
+    - ends with Sprint Review and Sprint Retrospective
+    - Code, Test, Integrate, and Iterate
+    - aim for feature to be 100% done
+    - half finished features count for nothing
+    Sprint Review
+        - Presentation of a demo to usrs
+        - software should be ready for release
+    Sprint Retrospective
+        - debreif to find ways to improve
+- Product Owner
+    - Responsible for communicating with customers to understand requirements
+    - Holds ownership of the Product Backlog
+    - May handle recording the Sprint Backlog chosen by the team
+    - Going to lead the effort to set your project's direction
+    - Frequently leads the Sprint Review with the customer
+- Scrum Master
+    - Responsible for ensuring proper implementation of Scrum practices
+    - Documenting scrum practice
+    - Maintains the updated Sprint Backlog
+    - Often leads the Sprint Retrospective
+- Devlopment Team
+    - Responsible for creating the software
+    - everyone involved in every aspect
+-Product backlog
+    - Collection of user stories
+    - has basic info like name, one sentence summary, and some notes.
+    - could have effort estimate or priority
+- each sprint produces next increment, increment is fully-releasable software system
+- no buggy or half finished features

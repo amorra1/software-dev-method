@@ -21,3 +21,7 @@ bool Account::withdraw(double amount) {
 }
 
 // Implement the overloaded operator below this line
+std::ostream &operator<<(std::ostream &os, const Account &account){
+    os << "Name: " << account.name << "," << "Balance: $" << account.balance << std::endl;
+    return os;
+}

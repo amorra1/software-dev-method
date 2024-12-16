@@ -5,10 +5,11 @@
 using namespace std;
 
 /* === Notes ===
+- allow you to work directly with program memory allocating and deallocating
 - Pointers are variables so they can change
 - Contains memory address as its value
 - A pointer indirectly references a variable
-- Dereferencing is done with the * operator
+- Dereferencing is done with the * operator, which accesses the data the pointer is pointing to
 - Dereferencing a nullptr will cause a crash
 - can be reassigned
 

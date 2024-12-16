@@ -6,10 +6,14 @@
 using namespace std;
 
 /* === Vectors Notes === 
-- Dynamic in side: can shrink or grow at runtime
+- Dynamic in size: can shrink or grow at runtime
 - has same type elements 
 - stored contiguously
 - elements are automatically initialized to zero, unless stated otherwise
+- first element is at index 0, last element at index -1
+- with subscript operator [] no bounds checking is performed
+- vectors are efficient
+
 */
 
 int main() {
