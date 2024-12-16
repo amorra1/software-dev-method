@@ -1,0 +1,44 @@
+- SDD is for the development team only, not shown to client
+- it is technical, more diagrams
+- is a dynamic document and is a framekwork that evolves or is filled in as project matures
+- Structural Diagrams
+    - static representation of a system
+    - what is in the system? how do pieces depend on one another? where are pieces installed/deployed?
+- Behavioural Diagrams
+    - representation of the systems dynamic
+    - how do pieces interact? what pieces change state over time? what data gets used, created, modified, destroyed?
+- Class Diagrams
+    - Aggregation:
+        - The relationship between the whole and the part
+    - Composition:
+        - 
+    - Association:
+        - There is a connection between one type of object and another type of object
+    - Dependancies:
+        - when a change in class A causes a change in class Before
+- Use Cases vs. Agile User Stories
+    - agile user stories are much shorter
+    - use case contains info on what the system is doing along a timeline
+    - use case can also contain non-functional requirements
+- Entity Objects:
+    - terms from the glossary
+    - reccuring nounds from the use cases
+    - real world entities that the system needs to track
+    - real world activities that must be tracked
+    - data sources or sinks
+- Boundary Objects
+    - UI controls that the user needs to initiate a use case
+    - forms needed to obtain information from the user
+    - message sent by the system to the user
+- Control Objects
+    - do not have conrete counter parts in the real world
+    - they coordinate the interaction between boundary objects and entity objects
+- Sequence Diagrams
+    - recreates a use case using its objects
+    - consists of the actors, boundary, control, and entity Objects with interactions shown along a timeline
+- State Chart Diagram 
+    - focuses on just a single object
+    - illustrates how that object behaves in reponse to a series of system events
+    - State: the way an object exists at a particular point
+- Use Case Diagram
+    - 

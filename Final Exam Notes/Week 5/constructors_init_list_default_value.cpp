@@ -27,6 +27,14 @@ using namespace std;
 - Copy Constructor
     - used when an object is copied
     - we pass an object by value, return an object by value
+- compiler types checks the implementation of the method against the method prototype
+- include guards ensure that the file is processed only once
+    - #pragma once 
+    - is equivalent to ...
+      #ifndef _ACCOUNT_H_
+      #define _ACCOUNT_H_
+
+      #endif
 */
 
 class Student

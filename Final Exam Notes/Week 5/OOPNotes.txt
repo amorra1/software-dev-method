@@ -1,0 +1,7 @@
+- Static Class members
+    - attribute that belongs to the whole class, not just the objects
+    - useful to store class wide information
+- Friends of a Class
+    - is a function or another class that has access to private class members
+    - friendship is granted not taken
+    - not symmetric or transitive

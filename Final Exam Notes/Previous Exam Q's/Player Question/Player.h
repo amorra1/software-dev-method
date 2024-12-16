@@ -1,5 +1,6 @@
 // Player.h
 #include <string>
+#include <iostream>
 
 class Player {
 private:
@@ -19,8 +20,10 @@ public:
         return this->name;
     }
 
-    friend std::ostream &operator<<(std::ostream &os, const Player &p) {
-        os << p.getName();
-        return os;
-    }
+    template<typename T>
+    friend void swap(T &one, T &two);
+    template<typename T>
+    void display(T &player, std::string message);
+    
 };
+

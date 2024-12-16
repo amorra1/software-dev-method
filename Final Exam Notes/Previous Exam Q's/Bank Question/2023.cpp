@@ -13,15 +13,20 @@ void display(const vector<Account *> &accounts) {
         cout << *acc << endl;
 }
 
+std::ostream& operator<<(std::ostream &os, const Checking_Account &account){
+    os << "Checking Name: " << account.name << ", Balance: $" << account.balance
+                                            << ", Per Check Fee: " << account.per_check_fee;
+    return os;
+}
+
 int main() {
     Account *account_1003 = new Checking_Account("Account_1003", 1000);
     Account *account_1004 = new Savings_Account("Account_1004", 2000);
 
     account_1003->withdraw(500);
     cout << *account_1003 << endl;
-
     account_1004->deposit(500);
-    cout << *account_1004 << endl;
+    cout << *account_1004 << endl; 
 
     vector<Account *> accounts;
     accounts.push_back(account_1003);

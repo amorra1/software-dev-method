@@ -5,6 +5,10 @@
 using namespace std;
 
 /* === Deep Copy Notes ===
+- copy constructor is used when an object is copied
+- c++ has a default copy constructor
+- passes object by value to function
+    - pass as  a const reference
 - copies the actual resource, not just the pointer
 - each object has its own independant copy of the dynamic resource
 - avoids issues of double deletion
